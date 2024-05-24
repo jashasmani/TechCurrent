@@ -38,6 +38,7 @@ const App = () => {
           </li>
         ))}
       </ul>
+      <h6 className="bottomtitle">© all rights reserved by JASH ASMANI</h6>
     </div>
   );
 };

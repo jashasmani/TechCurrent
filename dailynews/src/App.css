@@ -30,9 +30,17 @@ body {
 
 .title {
   font-size: 24px;
+  font-family: Roboto;
   margin-bottom: 20px;
   text-align: center;
   color: white;
+}
+.bottomtitle {
+  font-size: 15px;
+  padding-top: 1rem;
+  text-align: center;
+  color: white;
+  font-family: Roboto;
 }
 
 ul {
@@ -53,6 +61,7 @@ li {
 
 .st {
   font-size: 18px;
+  font-family: Roboto;
   color: white;
   margin-bottom: 1rem;
 }
