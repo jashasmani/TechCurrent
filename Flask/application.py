@@ -1,12 +1,17 @@
 from flask import Flask, jsonify
+from flask_cors import CORS
 import requests
 from bs4 import BeautifulSoup
 
 application = Flask(__name__)
+CORS(application)  # This will enable CORS for all routes
 
 def scrape_data():
     url = "https://www.businesstoday.in/tech-today/explainers"
-    HEADERS = ({'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0', 'Accept-Language': 'en-US,en;q=0.5'})
+    HEADERS = ({
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0',
+        'Accept-Language': 'en-US,en;q=0.5'
+    })
     
     response = requests.get(url, headers=HEADERS)
     soup = BeautifulSoup(response.content, 'html.parser')
