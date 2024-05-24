@@ -14,7 +14,7 @@ connectDB();
 
 // Define a Mongoose model (replace ModelName and schema definition with your actual model)
 const Scraping = mongoose.model(
-  "Scraping",
+  "articles",
   new mongoose.Schema({
     title: String,
     link: String,
@@ -23,7 +23,7 @@ const Scraping = mongoose.model(
   })
 );
 
-app.get("/", async (req, res) => {
+app.get("/data", async (req, res) => {
   try {
     const data = await Scraping.find();
     res.json(data);
