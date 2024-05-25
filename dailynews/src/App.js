@@ -8,9 +8,11 @@ const App = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("https://daily-news-1.onrender.com/data");
+        const response = await axios.get(
+          "https://daily-news-1.onrender.com/data"
+        );
         setScrapedData(response.data);
-        console.log(response.data)
+        console.log(response.data);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
@@ -22,7 +24,6 @@ const App = () => {
   return (
     <div className="container">
       {" "}
-     
       <h1 className="title">Technology Updates</h1>
       <ul className="ul">
         {scrapedData.map((data, index) => (
@@ -30,16 +31,19 @@ const App = () => {
             <div>
               <strong className="st">{data.title}</strong> <br />
             </div>
-            <div style={{marginTop:'1.5rem'}}>
+            <div style={{ marginTop: "1.5rem" }}>
               {data.description} <br />
             </div>
             <div className="right">
-              <a className="link" href={data.link}>Show More</a> <br />
+              <a className="link" href={data.link}>
+                Show More
+              </a>{" "}
+              <br />
             </div>
           </li>
         ))}
       </ul>
-      <h6 className="bottomtitle">© all rights reserved by JASH ASMANI</h6>
+      <h6 className="bottomtitle">© JASH ASMANI. All rights reserved.</h6>
     </div>
   );
 };
