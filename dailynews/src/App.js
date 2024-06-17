@@ -6,7 +6,6 @@ import "./App.css";
 const App = () => {
   const [scrapedData, setScrapedData] = useState([]);
   const [loading, setLoading] = useState(true);
-
   const [currentDate, setCurrentDate] = useState("");
 
   useEffect(() => {
@@ -42,7 +41,7 @@ const App = () => {
     <div className="app-container">
       <nav className="nav-style">
         <h1 className="title">TechCurrent</h1>
-        <h5 style={{marginRight:'1rem'}}>{currentDate}</h5>
+        <h5 className="date">{currentDate}</h5>
       </nav>
       <div className="main-content">
         {loading ? (
@@ -78,7 +77,7 @@ const App = () => {
           </ul>
         )}
       </div>
-      <footer>
+      <footer className="footer">
         <h6 className="bottomtitle">© JASH ASMANI. All rights reserved.</h6>
       </footer>
     </div>
