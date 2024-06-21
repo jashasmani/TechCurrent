@@ -1,10 +1,10 @@
 # [TechCurrent](https://tech-current.vercel.app/)
 
 ## Overview
-TechCurrent is a web application that scrapes news articles from various websites using Flask for the backend and displays them using React for the frontend. It provides users with up-to-date news summaries and allows them to filter news based on categories or sources.
+TechCurrent is a web application that scrapes news articles from [businesstoday](https://www.businesstoday.in/) using Flask for the backend and displays them using React for the frontend. It provides users with up-to-date news summaries and allows them to filter news based on categories or sources.
 
 ## Features
-- **Web Scraping**: Automatically fetches news articles from selected websites.
+- **Web Scraping**: Automatically fetches news articles from  [businesstoday](https://www.businesstoday.in/).
 - **Backend**: Uses Flask to handle web scraping logic and serve API endpoints.
 - **Frontend**: Displays news data in a user-friendly interface using React.
 - **Filtering**: Allows users to filter news by categories (e.g., technology, business) or sources.
