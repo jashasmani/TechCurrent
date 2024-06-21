@@ -1,4 +1,4 @@
-# TechCurrent
+# [TechCurrent](https://tech-current.vercel.app/)
 
 ## Overview
 TechCurrent is a web application that scrapes news articles from various websites using Flask for the backend and displays them using React for the frontend. It provides users with up-to-date news summaries and allows them to filter news based on categories or sources.
