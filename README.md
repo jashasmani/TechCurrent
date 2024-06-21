@@ -1,1 +1,1 @@
-# Daily-News
+# TechCurrent
